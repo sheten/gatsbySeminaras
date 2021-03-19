@@ -137,10 +137,11 @@ class Index extends React.Component {
               </li>
             </ul>
             <header className="major">
-            <p>
-              Individualios Konfiguracijos Kaina: 60 eur.<br/>
-              Jei domina, drąsiai kreipkitės ir suderinsime jums patogų susitikimo laiką bei būdą!<br/>
-              Susisiekti galite elektroniniu paštu: <span style={{fontWeight: "400"}}>blauskas@gmail.com</span><br/>
+              <p>
+                Individualios Konfiguracijos Konsultacija Kaina: 60 eur.</p>
+              <p>
+              Jei domina, drąsiai kreipkitės ir suderinsime jums patogų susitikimo laiką bei būdą!
+              <p>Susisiekti galite elektroniniu paštu: <span style={{fontWeight: "400"}}>blauskas@gmail.com</span></p>
               Arba socialiniais tinklais:
             </p>
               <ul className="icons">
