@@ -3,7 +3,7 @@ import React from 'react'
 
 const Footer = props => (
   <footer id="footer">
-    <section>
+    {/* <section>
       <h2>Papildoma informacija</h2>
       <p>
         Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat
@@ -11,24 +11,22 @@ const Footer = props => (
         aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae
         tincidunt odio.
       </p>
-      {/* <ul className="actions">
+      <ul className="actions">
         <li>
           <Link to="/generic" className="button">
             Learn More
           </Link>
         </li>
-      </ul> */}
+      </ul>
     </section>
     <section>
       <h2>Kontaktai</h2>
       <dl className="alt">
-        {/* <dt>Adresas</dt>
-        <dd>1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA</dd> */}
         <dt>Kontaktinis Telefonas:</dt>
         <dd>+447395679106</dd>
         <dt>Elektroninis Adresas:</dt>
         <dd>
-          {/* <a href="https://codebushi.com">information@untitled.tld</a> */}
+          <a href="https://codebushi.com">information@untitled.tld</a>
           <a href="#">blauskas@gmail.com</a>
         </dd>
       </dl>
@@ -52,7 +50,7 @@ const Footer = props => (
           </a>
         </li>
 
-        {/* <li>
+        <li>
           <a
             href="https://twitter.com/huntaroSan"
             className="icon fa-twitter alt"
@@ -82,12 +80,12 @@ const Footer = props => (
           <a href="https://codebushi.com" className="icon fa-dribbble alt">
             <span className="label">Dribbble</span>
           </a>
-        </li> */}
+        </li>
       </ul>
     </section>
     <p className="copyright">
       &copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.
-    </p>
+    </p> */}
   </footer>
 )
 

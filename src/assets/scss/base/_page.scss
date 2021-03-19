@@ -27,7 +27,9 @@
 		background-color: _palette(bg);
 		@include vendor('background-image', (
 			'url("../images/overlay.png")',
-			'linear-gradient(45deg, #{_palette(bg1)} 15%, #{_palette(bg2) 85%})',
+			linear-gradient( 55deg, #6C6ABE 2%, #D07954 98%),
+			// linear-gradient(55deg, #D07954 2%, #824DAC 98%),
+			// 'linear-gradient(45deg, #{_palette(bg1)} 15%, #{_palette(bg2) 85%})',
 		));
 
 		// Prevents animation/transition "flicker" on page load.
