@@ -78,10 +78,10 @@
 			}
 
 			&.alt {
-				@include padding(3em, 2em, (1em, 0, 0, 0));
+				@include padding(3em, 1em, (1em, 0, 0, 0));
 
 				h1 {
-					font-size: 2.5em;
+					font-size: 2.2em;
 				}
 			}
 		}

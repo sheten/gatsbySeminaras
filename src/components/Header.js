@@ -5,7 +5,10 @@ import logo from '../assets/images/logo.svg';
 const Header = (props) => (
     <header id="header" className="alt">
         <span className="logo"><img src={logo} alt="" /></span>
-        <h1>Technologijų Apribojimas</h1>
+        <h1>
+            Vaiko Apsauga Internete:<br/>
+            Individuali Konfigūracija
+        </h1>
         {/* <p>Just another, fully responsive website</p> */}
     </header>
 )

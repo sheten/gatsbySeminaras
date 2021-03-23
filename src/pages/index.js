@@ -1,8 +1,8 @@
-import { Link } from 'gatsby'
+// import { Link } from 'gatsby'
 import React from 'react'
 import Helmet from 'react-helmet'
 import { Waypoint } from 'react-waypoint'
-import yinYang from '../assets/images/yin_yang.svg'
+// import yinYang from '../assets/images/yin_yang.svg'
 import profile from '../assets/images/Profile.png'
 import Header from '../components/Header'
 import Layout from '../components/layout'
@@ -27,7 +27,7 @@ class Index extends React.Component {
   render() {
     return (
       <Layout>
-        <Helmet title="Technologijų apribojimas" />
+        <Helmet title="Vaikų Apsauga Internete" />
 
         <Header />
 
@@ -37,33 +37,86 @@ class Index extends React.Component {
         ></Waypoint>
         {/* <Nav sticky={this.state.stickyNav} /> */}
 
-        <div id="main">
-          <section id="intro" className="main">
-            <div className="spotlight">
-              <div className="content">
-                <header className="major">
-                  <h2>Esu Džiugas Šablauskas</h2>
-                </header>
-                <p>
-                  Esu naujovių bei technologijų entuziastas, patinka nauda, kurią technologijos suteikia. 
-                  Esu 'Programišius', užsiimu internetinių bei mobiliųjų aplikacijų kurimu,
-                  studijuoju informacinių technologijų verslą universitete.
-                  Technologijos - neatsiejama dalis mano gyvenime, tačiau atneša išsiblaškymą bei kitus šešėlius...<br /><br />
-                  Taip kilo siekis rasti ir tinkamai pritaikyti technologijų apribojimo galimybes. 
-                  Šiandien jau daugiau nei trys metai, kaip taikau įrenginių apribojimus.
+        <div id="main">          
+          <section id="second" className="main special">
+            <header className="major">
+              <h2>
+                  Individualios konfigūracijos metu padėsiu įdiegti programėles į jūsų elektroninius įrenginius, 
+                  kurios padės monitorinti bei apriboti vaikų pasiekiamą turinį įrenginyje bei internete.
+              </h2>
+              <p>
+                Jei neturite laiko ar nežinote kaip sukonfigūruoti į įrenginius (Telefoną, Kompiuterį) programėles, su džiaugsmu jums padėsiu.                 
+              </p>
+            </header>
+            <ul className="statistics">
+              {/* <li className="style1">
+                <span className="icon fa-code-fork"></span>
+                <strong>5,120</strong> Etiam
+              </li> */}
+              {/* <li className="style2">
+                <span className="icon fa-folder-open-o"></span>
+                <strong>8,192</strong> Magna
+              </li> */}
+              <li className="style2">
+                <span className="icon fa-hourglass"></span><br/>
+                Padėsiu sutaupyti laiką ir tinkamai sukonfigūruoti jūsų įrenginį
+              </li>
+              <li className="style3">
+                <span className="icon fa-diamond"></span><br />
+                Apmokysiu, kad kitą kartą norint atnaujinti apribojimus, tai padaryti galėtumėte lengvai patys
+              </li>
+              <li className="style4">
+                <span className="icon fa-question-circle"></span><br />
+                Atsakysiu į klausimus bei parinksiu geriausią apribojimų variantą
+              </li>
+            </ul>
+            <header className="major">
+              <p style={{ marginBottom: "10px" }}>
+                Individualios Konfigūracijos Kaina: 60eur.
+              </p>
+              <p style={{marginBottom: "10px"}}>
+                Jei domina, drąsiai kreipkitės ir suderinsime jums patogų susitikimo laiką bei būdą!
+              </p>
+              <p style={{ marginBottom: "10px" }}>
+                <p style={{ marginBottom: "10px", fontSize: "1em" }}>
+                Susisiekti galite elektroniniu paštu: <span style={{fontWeight: "400"}}>blauskas@gmail.com</span>
                 </p>
-                {/* <ul className="actions">
-                  <li>
-                    <Link to="/generic" className="button">
-                      Sužinok daugiau
-                    </Link>
-                  </li>
-                </ul> */}
-              </div>
-              <span className="image">
-                <img src={profile} alt="Profilio nuotrauka" />
-              </span>
-            </div>
+                Arba per Facebook
+              </p>
+                <a
+                  href="https://www.facebook.com/profile.php?id=100007791466332"
+                  className="icon fa-facebook alt" style={{ marginLeft: "1vh", size: "10px" }}
+                >
+                  <span className="label">Facebook</span>
+                </a>
+              {/* <ul className="icons">
+                <li>
+                    <a 
+                      href="https://www.facebook.com/profile.php?id=100007791466332"
+                     className="icon fa-facebook alt" style={{marginRight: "2vh"}}
+                     >
+                    <span className="label">Facebook</span>
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href="https://www.instagram.com/sablauskas.cia/" 
+                    className="icon fa-instagram alt"
+                  >
+                    <span className="label">Instagram</span>
+                  </a>
+                </li>
+              </ul> */}
+            </header>
+            {/* <footer className="major">
+              <ul className="actions">
+                <li>
+                  <Link to="/generic" className="button">
+                    Užsisakyti
+                  </Link>
+                </li>
+              </ul>
+            </footer> */}
           </section>
 
           <section id="first" className="main special">
@@ -107,79 +160,38 @@ class Index extends React.Component {
             </footer> */}
           </section>
 
-          <section id="second" className="main special">
-            <header className="major">
-              <h2>Individuali Įrenginio Konfiguracija</h2>
-              <p>
-                Esate užsiėmę ir neturite laiko apribojimų įdiegimui ar tiesiog sudėtinga gaudytis technologijų pinklėse?
-              </p>
-            </header>
-            <ul className="statistics">
-              {/* <li className="style1">
-                <span className="icon fa-code-fork"></span>
-                <strong>5,120</strong> Etiam
-              </li> */}
-              {/* <li className="style2">
-                <span className="icon fa-folder-open-o"></span>
-                <strong>8,192</strong> Magna
-              </li> */}
-              <li className="style3">
-                <span className="icon fa-signal"></span><br/>
-                Padėsiu sutaupyti laiką ir tinkamai sukonfigūruoti jūsų įrenginį
-              </li>
-              <li className="style5">
-                <span className="icon fa-diamond"></span><br />
-                Apmokysiu, kad kitą kartą norint atnaujinti apribojimus, tai padaryti galėtumėte lengvai patys
-              </li>
-              <li className="style4">
-                <span className="icon fa-laptop"></span><br />
-                Atsakysiu į klausimus bei parinksiu geriausią apribojimų variantą
-              </li>
-            </ul>
-            <header className="major">
-              <p>
-                Individualios Konfiguracijos Konsultacija Kaina: 60 eur.</p>
-              <p>
-              Jei domina, drąsiai kreipkitės ir suderinsime jums patogų susitikimo laiką bei būdą!
-              <p>Susisiekti galite elektroniniu paštu: <span style={{fontWeight: "400"}}>blauskas@gmail.com</span></p>
-              Arba socialiniais tinklais:
-            </p>
-              <ul className="icons">
-                <li>
-                    <a 
-                      href="https://www.facebook.com/profile.php?id=100007791466332"
-                     className="icon fa-facebook alt" style={{marginRight: "2vh"}}
-                     >
-                    <span className="label">Facebook</span>
-                  </a>
-                </li>
-                <li>
-                  <a 
-                    href="https://www.instagram.com/sablauskas.cia/" 
-                    className="icon fa-instagram alt"
-                  >
-                    <span className="label">Instagram</span>
-                  </a>
-                </li>
-              </ul>
-            </header>
-            {/* <footer className="major">
-              <ul className="actions">
-                <li>
-                  <Link to="/generic" className="button">
-                    Užsisakyti
-                  </Link>
-                </li>
-              </ul>
-            </footer> */}
+          <section id="intro" className="main">
+            <div className="spotlight">
+              <div className="content">
+                <header className="major">
+                  <h2>Esu Džiugas Šablauskas</h2>
+                </header>
+                <p>
+                  Naujovių bei technologijų entuziastas, patinka nauda, kurią technologijos suteikia.
+                  Esu 'Programišius', užsiimu internetinių bei mobiliųjų aplikacijų kurimu,
+                  studijuoju informacinių technologijų verslą universitete.
+                  Technologijos - neatsiejama dalis mano gyvenime, tačiau atneša išsiblaškymą bei kitus šešėlius...<br /><br />
+                  Taip kilo siekis rasti ir tinkamai pritaikyti technologijų apribojimo galimybes.
+                  Šiandien jau daugiau nei trys metai, kaip taikau įrenginių apribojimus.
+                </p>
+                {/* <ul className="actions">
+                  <li>
+                    <Link to="/generic" className="button">
+                      Sužinok daugiau
+                    </Link>
+                  </li>
+                </ul> */}
+              </div>
+              <span className="image">
+                <img src={profile} alt="Profilio nuotrauka" />
+              </span>
+            </div>
           </section>
 
           <section id="cta" className="main special">
-            <header className="major" style={{display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column"}}>
               {/* <h2>Congue imperdiet</h2> */}
-              <p style={{fontWeight: 400}}>Technologijos yra skirtos palengvinti bei pagerinti mūsų gyvenimą, o ne apsunkinti</p>
-              <span className="logo" style={{width: "10vh",height: "10vh"}}><img src={yinYang} alt="" /></span>
-            </header>
+              <p style={{fontWeight: 700}}>"Technologijos yra skirtos palengvinti bei pagerinti mūsų gyvenimą, o ne apsunkinti"</p>
+              {/* <span className="logo" style={{width: "10vh",height: "10vh"}}><img src={yinYang} alt="" /></span> */}
             
             <footer className="major">
               {/* <ul className="actions">
